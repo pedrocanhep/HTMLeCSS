@@ -8,7 +8,7 @@
     }
 
     body {
-        background: url(../pacote_img/imagens/cev-landscape.jpg);
+        background: url(../../pacote_img/cev-landscape.jpg);
         background-position: left bottom;
     }
 }
@@ -21,7 +21,7 @@
     }
 
     body {
-        background: url(../pacote_img/imagens/cev-portrait.jpg);
+        background: url(../../pacote_img/cev-portrait.jpg);
         background-position: center bottom;
     }
 }
