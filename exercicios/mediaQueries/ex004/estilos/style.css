@@ -47,7 +47,7 @@ main > img {
     margin: 25px;
 }
 
-#phone {max-width: 170px; max-height: 170px;}
+#phone {display: block;}
 #pc {display: none;}
 #tablet {display: none;}
 #print {display: none;}
