@@ -3,45 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SantosFlix</title>
+    <title>Mini portifólio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <!-- Link para puxar os icones da ferramenta do google: "Google Icons" -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- cabeçalho -->
     <header>
-        <div>
-            <h1 id="abv" class="santos">SFC</h1>
-            <h1 id="ext" class="santos">SANTOS FC</h1>
-            <h1 id="flix">.flix</h1>
-        </div>
-        <!-- menu de itens -->
-        <menu>
+        <h1>Pedro</h1>
+    <!-- menu de itens -->
+        <i class="material-icons" id="burger" onclick="clickMenu()">menu</i>
+        <menu id="redes">
             <ul>
-                <li>Clásicos</li>
-                <li>Títulos</li>
-                <li>Pura felicidade</li>
-                <li>Dolorosos</li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
             </ul>
         </menu>
     </header>
 
-    <!-- conteúdo principal (vídeos dos jogos) -->
+    <!-- conteúdo principal -->
     <main>
         <article>
-            <div>
-                <h2>HOME PAGE SANTISTA</h2>
-                <p>Projeto feito por um jovem santista sofredor com diversos jogos marcantes para o tal, todos envolvendo, claro, o Santos Futebol Clube, time que já trouxe alegrias, tristezas, raivas, tristezas, momentos bons, tristezas, momentos ruins e tristezas para o criador deste projeto. </p>
-            </div>
-            <div id="call">
-                <h3>Escolha no menu do topo quais jogos deseja ver &uArr;</h3>
-            </div>
+            <h2>Sobre mim</h2>
+            <p>Sou um jovem ingressando no mundo digital do desenvolvimento, inicialmente partindo pelo desenvolvimento web utilizando HTML e CSS. 
+            </p>
+            <p>Até o momento (08/04/24) não tenho experiência profissional na área que desejo atuar (TI), porém busco estudar para aprimorar meus conhecimentos tecnicos e ter uma base teórica boa para ter um destaque no futuro.
+            </p>
+            <p>Estou concursando ADS na Unipar de Cianorte, estudando atráves de cursos, principalmente pelo Curso em Vídeo, lendo materiais didaticos e fazendo pesquisas afim de me tornar um grande profissional e me destacar no mercado da área de TI.</p>
         </article>
     </main>
 
-    <!-- rodapé básico -->
-    <footer>
-        <p>Projeto criado por Pedro Canhe Pereira</p>
-        <p>Visite meu GitHub: <a href="https://www.github.com/pedrocanhep" target="_blank" rel="noopener">github.com/pedrocanhep</a></p>
-    </footer>
+    <script>
+        function clickMenu() {
+            if (redes.style.display == 'none') {
+                redes.style.display = 'block'
+            } else {
+                redes.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
