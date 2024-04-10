@@ -4,6 +4,63 @@
     PALETA DE CORES:
     CLARO: #F3EFEE
     ESCURO: #191A18
-    CINZA: 5A5A5A
+    CINZA: #5A5A5A
     LARANJA: #FF9600
 */
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #191A18;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+section#login {
+    background-color: #F3EFEE;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0 0 10px #5a5a5a82;
+
+    /* centralizando */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#imagem {
+    display: block;
+    background: #F3EFEE url(../imagens/img-login.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: left center;
+    border-radius: 20px;
+}
+
+div#formulario {
+    display: block;
+    padding: 15px;
+    box-shadow: 0 -3px 5px #191a181d;
+}
+div#formulario > h1 {
+    color: #FF9600;
+    text-align: center;
+    padding: 10px;
+}
+div#formulario > p {
+    text-indent: 10px;
+    text-align: justify;
+}
