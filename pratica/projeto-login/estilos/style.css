@@ -29,10 +29,16 @@ main {
     position: relative;
 }
 
+@media screen and (max-width: 768px) {
+    section#login {
+        width: 70vw;
+         max-width: 370px;
+        height: 580px;
+    }  
+}
+
 section#login {
     background-color: #F3EFEE;
-    width: 300px;
-    height: 600px;
     border-radius: 20px;
     position: absolute;
     box-shadow: 0 0 10px #5a5a5a82;
@@ -43,7 +49,7 @@ section#login {
     transform: translate(-50%, -50%);
 
     /* animando a transição dos tamanhos */
-    transition: width 0.5s, heigth 0.5s;
+    transition: width 0.3s, heigth 0.3s;
     transition-timing-function: ease;
 }
 
@@ -62,9 +68,10 @@ div#formulario {
     box-shadow: 0 -3px 5px #191a181d;
 }
 div#formulario > h1 {
+    font-size: 2em;
     color: #FF9600;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 div#formulario > p {
     text-indent: 10px;
