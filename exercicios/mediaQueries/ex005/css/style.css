@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* estilização geral dos formatos */
+/* estilização geral (mobile first) */
 
 /* Configurações globais */
 * {
@@ -19,12 +19,6 @@ html, body {
 header {
     background-color: #051119;
     text-align: center;
-}
-
-@media screen and (min-width: 500px) {
-    header > h1::after {
-        content: ' Canhe Pereira';
-    }  
 }
 
 header> h1 {
