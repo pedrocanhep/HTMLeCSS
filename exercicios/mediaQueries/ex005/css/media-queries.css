@@ -16,19 +16,22 @@ Grandes telas: acima de 1200px
     #burger {
         display: none; 
     }
-    header > h1::after {
-        content: ' Canhe Pereira';
-    } 
+
     menu {
         display: block;
     }
+
     menu > ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content:space-around;
     }
     
-    menu > ul > li {
-        width: 24%;
+    menu > ul > li  {
+        width: 18%;
+    }
+
+    main {
+        max-width: 768px;
     }
 }
