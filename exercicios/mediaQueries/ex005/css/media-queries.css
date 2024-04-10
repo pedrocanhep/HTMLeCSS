@@ -2,16 +2,6 @@
 
 /* estilização dos demais formatos de tela */
 
-/* TYPICAL DEVICE BREAKPOINTS
---------------------------------
-Pequenas telas: até 600px
-Celulares: 600px até 768px
-Tablets: 768px até 992px
-Desktops: 992px até 1200px
-Grandes telas: acima de 1200px
------------------------------------ DADOS RECOLHIDOS NA W3C
-*/
-
 @media screen and (min-width: 768px){
     #burger {
         display: none; 
