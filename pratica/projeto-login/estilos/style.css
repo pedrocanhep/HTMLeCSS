@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* estilos gerais (MOBILE FIRST) */
+
 /* 
     PALETA DE CORES:
     CLARO: #F3EFEE
@@ -39,6 +41,10 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /* animando a transição dos tamanhos */
+    transition: width 0.5s, heigth 0.5s;
+    transition-timing-function: ease;
 }
 
 div#imagem {
