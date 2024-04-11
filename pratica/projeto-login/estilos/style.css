@@ -115,6 +115,7 @@ div.campo > input {
     background-color: #5a5a5a;
     font-size: 1em;
     color: #fff;
+    outline: none;
 }
 
 div.campo >input::placeholder {
