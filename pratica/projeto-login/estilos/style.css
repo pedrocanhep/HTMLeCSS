@@ -47,14 +47,15 @@ section#login {
     position: absolute;
     box-shadow: 0 0 10px #5a5a5a82;
 
+    
+    /* animando a transição dos tamanhos */
+    transition: width 0.3s, heigth 0.3s;
+    transition-timing-function: ease;
+    
     /* centralizando */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    /* animando a transição dos tamanhos */
-    transition: width 0.3s, heigth 0.3s;
-    transition-timing-function: ease;
 }
 
 /* configurações da imagem */
