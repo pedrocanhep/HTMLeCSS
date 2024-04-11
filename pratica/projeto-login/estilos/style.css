@@ -88,17 +88,47 @@ div#formulario > p {
 
 /* inputs email e senha */
 form > div.campo {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 98%;
     height: 40px;
     margin: 7px auto;
     background-color: #5a5a5a;
     border-radius: 5px;
     color: #F3EFEE;
+    border: solid 3px #5a5a5a;
 }
 
 div.campo > label {
-    display: none;
+    width: 40px;
+}
+div.campo > label > span {
+    padding: 4px 4px;
+    font-size: 1.7em;
+}
+
+div.campo > input {
+    width: calc(100% - 40px);
+    border-radius: 0 3px 3px 0;
+    border: none;
+    padding-left: 7px;
+    background-color: #5a5a5a;
+    font-size: 1em;
+    color: #fff;
+}
+
+div.campo >input::placeholder {
+    color: #ffffff9c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.campo >input:focus {
+    background-color: #F3EFEE;
+    color: #191A18;
+}
+
+div.campo >input:focus::placeholder {
+    color: #5a5a5a75;
 }
 
 /* botão entrar */
