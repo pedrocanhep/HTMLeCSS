@@ -86,12 +86,27 @@ div#formulario > p {
 
 /* CONFIGURAÇÃO DOS FORMULÁRIOS */
 
+/* inputs email e senha */
+form > div.campo {
+    display: block;
+    width: 98%;
+    height: 40px;
+    margin: 7px auto;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    color: #F3EFEE;
+}
+
+div.campo > label {
+    display: none;
+}
+
 /* botão entrar */
 form > input[type=submit] {
     display: block;
     background-color: #FF9600;
     font-size: 1.2em;
-    margin: 15px auto;
+    margin: 12px auto;
     width: 98%;
     height: 45px;
     color: #fff;
@@ -100,14 +115,14 @@ form > input[type=submit] {
     border: none;
 }
 form > input[type=submit]:hover {
-    box-shadow: 2px 2px 1px #5a5a5a;
+    box-shadow: 2px 2px 1px #5a5a5aaa;
     width: 100%;
     height: 47px;
 }
-form > input[type=submit]:focus {
+form > input[type=submit]:active {
     background-color: #F3EFEE;
     color: #FF9600;
-    box-shadow: 0 0 2px #5a5a5a;
+    box-shadow: 0 0 1px #5a5a5a;
 }
 
 /* botão  'esqueci senha'*/
@@ -123,8 +138,16 @@ form > a.botao {
     margin: 15px auto;
     height: 45px;
     width: 98%;
+    padding-top: 8px;
 }
 form > a.botao:hover {
     width: 100%;
-    height: 47px;
+}
+form > a.botao:active {
+    background-color: #FF9600;
+    color: #F3EFEE;
+}
+form > a.botao > span {
+    font-size: 0.8em;
+    
 }
