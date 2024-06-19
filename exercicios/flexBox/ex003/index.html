@@ -13,32 +13,33 @@
     .container {
       background-color: #51f;
       display: flex;
-      flex-direction: row;
-      gap: 10px;
+      /* flex-direction: row-reverse;
+      flex-wrap: wrap; */
+      flex-flow: row wrap;
       padding: 5px;
-      flex-wrap: wrap;
     }
  
     .item {
       background-color: #aaffaa;
       border: 1px solid #000;
+      margin: 0;
 
-      padding: 10px;
+      flex: auto;
       font-family: monospace;
-      font-size: 2em;
+      font-size: 1.2em;
       text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
-    <div class="item">7</div>
+    <p class="item">Exemplo 1</p>
+    <p class="item">Exemplo 2</p>
+    <p class="item">Exemplo 3</p>
+    <p class="item">Exemplo 4</p>
+    <p class="item">Exemplo 5</p>
+    <p class="item">Exemplo 6</p>
+    <p class="item">Exemplo 7</p>
   </div>
 </body>
 </html>
