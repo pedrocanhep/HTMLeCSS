@@ -6,40 +6,40 @@
   <title>FlexBox</title>
   <style>
     * {
-      border: none;
+      padding: none;
       margin: none;
+    }
+
+    body {
+      height: 97vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
       background-color: #51f;
+      height: 100px;
+      width: 300px;
       display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap; 
-      flex-flow: row wrap;
-      padding: 5px;
+      justify-content: space-around;
+      align-items: center;
     }
  
     .item {
       background-color: #aaffaa;
       border: 1px solid #000;
-      margin: 0;
-
-      flex: auto;
-      font-family: monospace;
-      font-size: 1.2em;
       text-align: center;
+      height: 20px;
+      padding: 5px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <p class="item">Exemplo 1</p>
-    <p class="item">Exemplo 2</p>
-    <p class="item">Exemplo 3</p>
-    <p class="item">Exemplo 4</p>
-    <p class="item">Exemplo 5</p>
-    <p class="item">Exemplo 6</p>
-    <p class="item">Exemplo 7</p>
+    <p class="item">Como</p>
+    <p class="item">Centralizar</p>
+    <p class="item">Uma div</p>
   </div>
 </body>
 </html>

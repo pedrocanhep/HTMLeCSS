@@ -6,28 +6,23 @@
   <title>FlexBox</title>
   <style>
     * {
-      border: none;
+      padding: none;
       margin: none;
     }
 
     .container {
       background-color: #51f;
+      height: 100px;
       display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap; 
-      flex-flow: row wrap;
-      padding: 5px;
+      justify-content: space-evenly;
+      align-items: end;
     }
  
     .item {
       background-color: #aaffaa;
       border: 1px solid #000;
-      margin: 0;
-
-      flex: auto;
-      font-family: monospace;
-      font-size: 1.2em;
       text-align: center;
+      height: 20px;
     }
   </style>
 </head>
