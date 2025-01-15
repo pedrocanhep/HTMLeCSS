@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBox</title>
+  <style>
+    * {
+      border: none;
+      margin: none;
+    }
+
+    .container {
+      background-color: #51f;
+      display: flex;
+      height: 300px;
+    }
+
+    .item {
+      background-color: #aaffaa;
+      border: 1px solid #000;
+      flex: auto;
+
+      font-family: monospace;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .item:nth-child(1){
+      order: 4;
+      align-self: flex-start;
+    }
+    .item:nth-child(2){
+      order: 1;
+      align-self: center;
+    }
+    .item:nth-child(3){
+      order: 3;
+      align-self: flex-end;
+    }
+    .item:nth-child(4){
+      order: 7;
+      align-self: stretch;
+    }
+    .item:nth-child(5){
+      order: 2;
+      align-self: flex-start;
+    }
+    .item:nth-child(6){
+      order: 9;
+      align-self: center;
+    }
+    .item:nth-child(7){
+      order: -1;
+      align-self: stretch;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+  </div>
+</body>
+</html>

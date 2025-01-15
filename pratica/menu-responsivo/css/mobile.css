@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+nav {
+  flex-flow: column nowrap;
+  height: 170px;
+  padding: 0;
+  margin: 15px 10px 0px 10px;
+}
+
+nav > div {
+  width: 85%;
+}
