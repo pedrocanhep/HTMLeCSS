@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* configurações para impressão na orientação horizontal (landscape) */
+
+h1::after {
+    content: 'PAISAGEM';
+    color: #ededed;
+}
+
+body {
+    background: url(../../pacote_img/cev-landscape.jpg);
+    background-position: left bottom;
+}

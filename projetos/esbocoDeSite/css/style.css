@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* estilização geral (mobile first) */
+
+/* Configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/* Configurações do cabeçalho */
+header {
+    background-color: #051119;
+    text-align: center;
+}
+
+header> h1 {
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+
+h1 {
+    font-size: 30pt;
+    text-shadow: 2px 5px 0 #000;
+}
+
+/* configurando menu */
+
+menu {
+    display: none;
+}
+
+#burger {
+    background-color: #020105;
+    padding: 10px;
+    border-radius: 50%;
+    color: #e7e7e7;
+    margin-bottom: 10px;
+}
+
+#burger:hover {
+    background-color: #e7e7e7;
+    color: #020105;
+    width: 50px;
+    border-radius: 50px;   
+    cursor: pointer;
+}
+
+menu > ul {
+    list-style: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #030e15;
+    text-align: center;
+    margin-top: 5px;
+}
+
+menu > ul > li > a:hover {
+    color: #879cd2;
+    background-color: #041018;
+}
+
+/* configurações do conteúdo */
+main {
+    width: 90vw;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main > article{
+    text-align: justify;
+}
+
+article h2 {
+    font-size: 20pt;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+article p {
+    text-indent: 30px;
+}
+
+

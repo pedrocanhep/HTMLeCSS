@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* configurações para impressão na orientação vertical (portrait) */
+
+h1::after {
+    content: 'RETRATO';
+    color: #ededed;
+}
+
+body {
+    background: url(../../pacote_img/cev-portrait.jpg);
+    background-position: center bottom;
+}
