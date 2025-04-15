@@ -90,24 +90,58 @@ menu>ul>li>a:hover {
 
 /* configurações do conteúdo */
 main {
-    width: 90vw;
-    background-color: #fff;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 main>article {
     text-align: justify;
+    width: 95vw;
+    background-color: #fff;
+    margin: 10px 0 50px 0;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 article h2 {
-    font-size: 20pt;
-    padding-bottom: 10px;
+    font-size: 2em;
+    padding-bottom: 5px;
     text-align: center;
+}
+
+article>h3 {
+    font-size: .9em;
+    padding-bottom: 15px;
+    color: #555;
+    text-align: justify;
 }
 
 article p {
     text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 25px;
+    background-color: #171717;
+    color: #fff;
+    width: 100vw;
+}
+
+footer>p {
+    text-align: center;
+    padding: 5px;
+    font-size: 10pt;
+    color: #fff;
+}
+
+footer>p>a {
+    color: #fff;
+    text-decoration: none;
 }
