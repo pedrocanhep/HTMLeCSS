@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre mim</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Link para puxar os icones da ferramenta do google: "Google Icons" -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media-queries.css" />
+  </head>
+  <body onresize="mudouTamanho()">
+    <!-- função para apresentar o menu de hambúrguer ao diminuir o tamanho da tela -->
+    <!-- cabecalho -->
+    <header>
+      <h1>Sobre mim</h1>
+      <!-- menu de itens -->
+      <menu id="itens">
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Sobre mim</a>
+          </li>
+          <li>
+            <a href="paginas/contatos.html">Contatos</a>
+          </li>
+        </ul>
+      </menu>
+      <i class="material-icons" id="burger" onclick="clickMenu()">menu</i>
+    </header>
+
+    <!-- conteúdo principal -->
+    <main>
+      <article>
+        <h2>Um pouco sobre mim</h2>
+        <h3>Quem sou eu?</h3>
+        <p>
+          Me chamo Pedro Canhe Pereira, nascido no dia 10/04/2005, na cidade de
+          Cianorte, Paraná.
+        </p>
+        <h3>Escola</h3>
+        <p>
+          Sempre tive destauque na escola, principalmente em matemática e
+          física. Sempre sentava na frente, estudava e prestava atenção,
+          principalemente na época do ensino médio , que foi quando amadureci um
+          pouco e perdi a mentalidade infantil de achar que a popularidade me
+          levaria a algum lugar. Sempre fui um aluno aplicado, tirando notas
+          altas e me dedicando ao máximo para aprender o conteúdo. O que me
+          levou a ter um bom desempenho nas provas e avaliações.
+        </p>
+        <h3>Faculdade</h3>
+        <p>
+          Hoje (2025) estou cursando Analise e Desenvolvimento de Sistemas, na
+          UMFG de Cianorte, estou no primeiro de cinco períodos. A mentalidade
+          de me aplicar profundamente a cada matéria só aumentou e o
+          amadurecimento do conhecimento me fez crescer e se tornar um bom
+          estudante, mesmo que já tenha conhecimento em grande parte dos
+          conteúdos vistos até o momento por entrar na faculdade depois de 2
+          anos longe do ensino médio e estudando com cursos e materiais sobre
+          Front-End, lógica, hardware, etc.
+        </p>
+        <h3>Trabalho</h3>
+        <p>
+          Até o momento, não consegui engressar no mercado de trabalho na área
+          de tecnologia (15/04/2025), mas estou em busca de um estágio ou
+          oportunidade de trabalho na área. Estou sempre me atualizando e
+          aprendendo novas tecnologias e ferramentas. Porém, aos 15 anos tive
+          meu primeiro emprego como consultor de viagens em uma agência de
+          turismo online, onde aprendi a lidar com o público e a trabalhar em
+          equipe. Após sair da agência, trabalhei como freelancer de fim de ano
+          para uma loja de calçados conhecida na região: Solange Calçados, onde
+          organizava a loja e guardava os calçados, e com o dinheiro que recebi
+          de lá comprei meu notebook para meus estudos sobre programação e
+          tecnologia. Ainda trabalhei no cinema da cidade como funcionário
+          "geral", onde operava caixa, recebia clientes, trabalhava na bancada
+          de alimentos, manuziava o projetor e organizava a sala do cinema.
+          Atualmente estou a mais de um ano trabalhando como operador de caixa
+          registrado em uma loja esportiva renomada na região chamada Virtual
+          Esportes, onde estou há pouco mais de 1 ano e meio.
+        </p>
+        <h3>Hobbies</h3>
+        <p>
+          Sou grande amante de esportes, principalmente futebol. Santista desde
+          que me entendo como gente, sempre gostei de jogar bola e assistir aos
+          jogos do meu time e jogos internacionais. Porém minha paixão por
+          esportes sempre foi além do futebol quando o assunto era prática:
+          basquete, vôlei, handebol, tênis e corrida sempre me atraíram e sempre
+          procurei praticar. Além de ser um grande amante de música,
+          principalmente as antigas: Queen, Beatles, Legião Urbana, Michael
+          Jackson, ABBA, Bee Gees, e outros sempre estão na minha rotina diária.
+          Gosto também de cinema, principalmente ação e comédia, sou um grande
+          fã da Marvel, saga Harry Potter, filmes de história, ficção cientifica
+          e etc.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 - esboço projetado por
+        <a href="https://github.com/pedrocanhep" target="_blank" rel="noopener"
+          >Pedro Canhe Pereira</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 1300) {
+          itens.style.display = "flex";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+
+      function clickMenu() {
+        if (itens.style.display == "flex") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "flex";
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("itens");
+        if (window.scrollY > 100) {
+          header.style.width = "20vw";
+        } else {
+          header.style.width = "40vw";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 
 /* estilização dos demais formatos de tela */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
     #burger {
         display: none;
     }

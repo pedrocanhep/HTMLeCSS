@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Queries</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esboço.com</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <!-- Link para puxar os icones da ferramenta do google: "Google Icons" -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-queries.css">
-</head>
-<body onresize="mudouTamanho()"> <!-- função para apresentar o menu de hambúrguer ao diminuir o tamanho da tela -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+  </head>
+  <body onresize="mudouTamanho()">
+    <!-- função para apresentar o menu de hambúrguer ao diminuir o tamanho da tela -->
     <!-- cabecalho -->
     <header>
-        <h1>Site</h1>
-    <!-- menu de itens -->
-    <menu id="itens">
+      <h1>Site</h1>
+      <!-- menu de itens -->
+      <menu id="itens">
         <ul>
-            <li><a href="#" target="_blank" rel="noopener">Home</a></li>
-            <li><a href="paginas/sobreMim" target="_self" rel="noopener">Sobre mim</a></li>
-            <li><a href="paginas/contatos" target="_self" rel="noopener">Contatos</a></li>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="paginas/sobreMim.html">Sobre mim</a>
+          </li>
+          <li>
+            <a href="paginas/contatos.html">Contatos</a>
+          </li>
         </ul>
-    </menu>
-    <i class="material-icons" id="burger" onclick="clickMenu()">menu</i>
+      </menu>
+      <i class="material-icons" id="burger" onclick="clickMenu()">menu</i>
     </header>
 
     <!-- conteúdo principal -->
     <main>
-        <article>
-            <h2>Ideia de layout de site para aplicações</h2>
-            <h3>Este é um esboço de um site, afim de demonstrar conhecimento em estruturação de elementos e estilização de páginas web. Além de apresentar o uso de media queries para responsividade.</h3>
-            <p>O site é simples, com um menu de navegação e um conteúdo principal. O menu é responsivo, mudando de exibição conforme o tamanho da tela. O conteúdo principal é apresentado em um artigo, com título e parágrafo explicativo.</p>
-            <p>O objetivo deste projeto é demonstrar a capacidade de criar um layout básico de site, utilizando HTML e CSS, com foco em responsividade e usabilidade.</p>
-            <p>O site é um exemplo de como estruturar e estilizar uma página web, utilizando boas práticas de desenvolvimento e design. O uso de media queries permite que o site se adapte a diferentes tamanhos de tela, proporcionando uma melhor experiência para o usuário.</p>
-            <p>O projeto é uma demonstração de habilidades em HTML e CSS, com foco em responsividade e usabilidade. O site é um exemplo de como criar um layout básico, utilizando boas práticas de desenvolvimento e design.</p>
-            <p>O site é um esboço de um projeto, que pode ser expandido e aprimorado com o tempo. O objetivo é criar um site funcional e responsivo, que atenda às necessidades do usuário e proporcione uma boa experiência de navegação.</p>
-        </article>
+      <article>
+        <h2>Ideia de layout de site para aplicações</h2>
+        <h3>
+          Este é um esboço de um site, afim de demonstrar conhecimento em
+          estruturação de elementos e estilização de páginas web. Além de
+          apresentar o uso de media queries para responsividade.
+        </h3>
+        <p>
+          O site é simples, com um menu de navegação e um conteúdo principal. O
+          menu é responsivo, mudando de exibição conforme o tamanho da tela. O
+          conteúdo principal é apresentado em um artigo, com título e parágrafo
+          explicativo.
+        </p>
+        <p>
+          O objetivo deste projeto é demonstrar a capacidade de criar um layout
+          básico de site, utilizando HTML e CSS, com foco em responsividade e
+          usabilidade.
+        </p>
+        <p>
+          O site é um exemplo de como estruturar e estilizar uma página web,
+          utilizando boas práticas de desenvolvimento e design. O uso de media
+          queries permite que o site se adapte a diferentes tamanhos de tela,
+          proporcionando uma melhor experiência para o usuário.
+        </p>
+        <p>
+          O projeto é uma demonstração de habilidades em HTML e CSS, com foco em
+          responsividade e usabilidade. O site é um exemplo de como criar um
+          layout básico, utilizando boas práticas de desenvolvimento e design.
+        </p>
+        <p>
+          O site é um esboço de um projeto, que pode ser expandido e aprimorado
+          com o tempo. O objetivo é criar um site funcional e responsivo, que
+          atenda às necessidades do usuário e proporcione uma boa experiência de
+          navegação.
+        </p>
+      </article>
     </main>
 
     <footer>
-        <p>&copy; 2025 - esboço projetado por <a href="https://github.com/pedrocanhep">Pedro Canhe Pereira</a></p>
+      <p>
+        &copy; 2025 - esboço projetado por
+        <a href="https://github.com/pedrocanhep" target="_blank" rel="noopener"
+          >Pedro Canhe Pereira</a
+        >
+      </p>
     </footer>
 
     <script>
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 768){
-                itens.style.display = 'flex'
-            } else {
-                itens.style.display = 'none'
-            }   
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "flex";
+        } else {
+          itens.style.display = "none";
         }
+      }
 
-        function clickMenu() {
-            if (itens.style.display == 'flex') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'flex'
-            }
+      function clickMenu() {
+        if (itens.style.display == "flex") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "flex";
         }
+      }
 
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("itens");
+        if (window.scrollY > 100) {
+          header.style.width = "20vw";
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
