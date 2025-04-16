@@ -83,7 +83,7 @@
 
     <script>
       function mudouTamanho() {
-        if (window.innerWidth >= 768) {
+        if (window.innerWidth >= 1300) {
           itens.style.display = "flex";
         } else {
           itens.style.display = "none";
@@ -100,7 +100,7 @@
 
       window.addEventListener("scroll", function () {
         const header = document.getElementById("itens");
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
           header.style.width = "20vw";
         }
       });
