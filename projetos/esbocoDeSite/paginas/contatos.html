@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Link para puxar os icones da ferramenta do google: "Google Icons" -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/media-queries.css" />
@@ -38,12 +45,20 @@
     <main>
       <h2>Formas de contato:</h2>
       <a
-        href="https://api.whatsapp.com/send?phone=5544999999999"
+        href="https://api.whatsapp.com/send?phone=5544999964181"
         target="_blank"
         rel="noopener"
         class="social"
       >
-        <div id="whatsapp">whatsapp</div>
+        <div class="botao-social">
+          <i
+            class="fa-brands fa-whatsapp icon"
+            title="whatsapp"
+            id="whatsapp"
+          ></i>
+          <p>Contato de whatsapp: <br />+55(44)99996-4181</p>
+          <i class="fa-solid fa-share-from-square open"></i>
+        </div>
       </a>
       <a
         href="https://www.instagram.com/pedro.canhe"
@@ -51,21 +66,50 @@
         rel="noopener"
         class="social"
       >
-        <div id="instagram">instagram</div>
+        <div class="botao-social">
+          <i
+            class="fa-brands fa-instagram icon"
+            title="instagram"
+            id="instagram"
+          ></i>
+          <p>Conta do instagram: <br />@pedro.canhe</p>
+          <i class="fa-solid fa-share-from-square open"></i>
+        </div>
+      </a>
+      <a class="social" onclick="copiarEmail('pedro.canhep@gmail.com')">
+        <div class="botao-social">
+          <i class="fa-regular fa-envelope icon" title="email" id="email"></i>
+          <p>Meu e-mail principal: <br />pedro.canhep@gmail.com</p>
+          <i class="fa-solid fa-share-from-square open"></i>
+        </div>
       </a>
       <a
-        href="mailto:pedro.canhep@gmail.com"
+        href="https://github.com/pedrocanhep"
         target="_blank"
         rel="noopener"
         class="social"
       >
-        <div id="email">email</div>
+        <div class="botao-social">
+          <i class="fa-brands fa-github icon" title="github" id="github"></i>
+          <p>Meu GitHub: <br />@pedrocanhep</p>
+          <i class="fa-solid fa-share-from-square open"></i>
+        </div>
       </a>
-      <a href="" class="social">
-        <div id="github">github</div>
-      </a>
-      <a href="" class="social">
-        <div id="linkedin">linkedin</div>
+      <a
+        href="https://www.linkedin.com/in/pedro-canhe/"
+        target="_blank"
+        rel="noopener"
+        class="social"
+      >
+        <div class="botao-social">
+          <i
+            class="fa-brands fa-linkedin icon"
+            title="linkedin"
+            id="linkedin"
+          ></i>
+          <p>Meu LinkedIn: <br />@pedro-canhe</p>
+          <i class="fa-solid fa-share-from-square open"></i>
+        </div>
       </a>
     </main>
 
@@ -103,6 +147,19 @@
           header.style.width = "40vw";
         }
       });
+
+      function copiarEmail(email) {
+        navigator.clipboard // API moderna do navegador que lida com a área de transferência
+          .writeText(email) // Copia o texto para a área de transferência
+          .then(() => {
+            // Se a cópia for bem-sucedida, exibe um alerta
+            alert("E-mail copiado para a área de transferência!");
+          })
+          .catch((err) => {
+            // Se ocorrer um erro, exibe uma mensagem de erro
+            console.error("Erro ao copiar: ", err);
+          });
+      }
     </script>
   </body>
 </html>

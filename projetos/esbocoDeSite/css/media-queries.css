@@ -31,4 +31,8 @@
     article {
         max-width: 768px;
     }
+
+    .social {
+        width: 50vw;
+    }
 }
