@@ -125,6 +125,20 @@ article p {
     margin-bottom: 15px;
 }
 
+.social {
+    display: flex;
+
+    padding: 10px;
+
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #0000007e;
+    width: 90%;
+    height: 70px;
+    border: solid 2px #171717;
+    border-radius: 15px;
+    margin: 20px 0
+}
+
 footer {
     position: fixed;
     bottom: 0;

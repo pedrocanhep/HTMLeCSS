@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre mim</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Link para puxar os icones da ferramenta do google: "Google Icons" -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media-queries.css" />
+  </head>
+  <body onresize="mudouTamanho()">
+    <!-- função para apresentar o menu de hambúrguer ao diminuir o tamanho da tela -->
+    <!-- cabecalho -->
+    <header>
+      <h1>Contatos</h1>
+      <!-- menu de itens -->
+      <menu id="itens">
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="sobreMim.html">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#">Contatos</a>
+          </li>
+        </ul>
+      </menu>
+      <i class="material-icons" id="burger" onclick="clickMenu()">menu</i>
+    </header>
+
+    <!-- conteúdo principal -->
+    <main>
+      <h2>Formas de contato:</h2>
+      <a
+        href="https://api.whatsapp.com/send?phone=5544999999999"
+        target="_blank"
+        rel="noopener"
+        class="social"
+      >
+        <div id="whatsapp">whatsapp</div>
+      </a>
+      <a
+        href="https://www.instagram.com/pedro.canhe"
+        target="_blank"
+        rel="noopener"
+        class="social"
+      >
+        <div id="instagram">instagram</div>
+      </a>
+      <a
+        href="mailto:pedro.canhep@gmail.com"
+        target="_blank"
+        rel="noopener"
+        class="social"
+      >
+        <div id="email">email</div>
+      </a>
+      <a href="" class="social">
+        <div id="github">github</div>
+      </a>
+      <a href="" class="social">
+        <div id="linkedin">linkedin</div>
+      </a>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 - esboço projetado por
+        <a href="https://github.com/pedrocanhep" target="_blank" rel="noopener"
+          >Pedro Canhe Pereira</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 1300) {
+          itens.style.display = "flex";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+
+      function clickMenu() {
+        if (itens.style.display == "flex") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "flex";
+        }
+      }
+
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("itens");
+        if (window.scrollY > 50) {
+          header.style.width = "20vw";
+        } else {
+          header.style.width = "40vw";
+        }
+      });
+    </script>
+  </body>
+</html>
