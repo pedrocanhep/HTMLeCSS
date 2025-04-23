@@ -6,55 +6,81 @@
     <title>Media Query 01</title>
     <link rel="stylesheet" href="estilos/tela.css" media="screen" />
     <link rel="stylesheet" href="estilos/impressora.css" media="print" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <header>
-      <h1>Notícias Futebolisticas</h1>
-      <menu>
-        <ul>
-          <li>Nacional</li>
-          <li>Internacional</li>
-          <li>Seleções</li>
-        </ul>
-      </menu>
+      <i class="fa-solid fa-bars icon abrir"></i>
+      <i class="fa-solid fa-xmark icon fechar"></i>
+      <h1 class="titulo">Notícias</h1>
+      <span class="filtro-pesquisa">
+        <input type="text" placeholder="Pesquisar" class="pesquisar" />
+        <button class="botao" title="buscar">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </span>
+      <i class="fa-solid fa-magnifying-glass icon procurar"></i>
+      <i class="fa-solid fa-xmark icon fechar-procurar"></i>
     </header>
+    <nav class="menu">
+      <ul>
+        <li>Clima</li>
+        <li>Tecnologia</li>
+        <li>Esportes</li>
+      </ul>
+    </nav>
 
-    <main>
-      <article>
-        <h2>Brasil empata com Espanha em amistoso no país basco.</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eius est
-          sapiente dolore perspiciatis illo! Voluptatum, ad nam unde hic
-          deleniti, eveniet quam veritatis totam doloribus nostrum repellendus
-          dolor. Nostrum!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          doloribus temporibus qui impedit eos architecto eligendi? Voluptatum
-          pariatur eos minus voluptatem. Voluptatum impedit pariatur, distinctio
-          repellat similique blanditiis velit quibusdam. Lorem ipsum dolor sit
-          amet consectetur, adipisicing elit. Voluptas dolorem quam totam
-          voluptates provident delectus qui eaque hic reprehenderit. Alias
-          dolorum soluta rerum? Reiciendis porro, provident enim accusamus nulla
-          beatae.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor minus
-          esse deleniti quibusdam voluptas! Commodi voluptates aperiam magni
-          neque reprehenderit rem quo corrupti aliquid, praesentium pariatur
-          repudiandae voluptate vitae minus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ex,
-          voluptas quia natus culpa ratione iusto quo tenetur minus asperiores,
-          doloremque quaerat iure, cupiditate sunt perferendis laudantium sequi
-          illum vel? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Obcaecati totam dolores temporibus, eligendi soluta amet consequuntur.
-          Labore quibusdam modi animi beatae, explicabo, deleniti eius obcaecati
-          error vero corporis velit fuga!
-        </p>
-      </article>
-    </main>
+    <main></main>
+
+    <script>
+      const abrir = document.querySelector(".abrir");
+      const fechar = document.querySelector(".fechar");
+      const menu = document.querySelector(".menu");
+      const pesquisar = document.querySelector(".procurar");
+      const fecharPesquisar = document.querySelector(".fechar-procurar");
+      const titulo = document.querySelector(".titulo");
+      const filtro = document.querySelector(".filtro-pesquisa");
+
+      abrir.addEventListener("click", () => {
+        menu.style.display = "flex";
+        abrir.style.display = "none";
+        fechar.style.display = "flex";
+      });
+
+      fechar.addEventListener("click", () => {
+        menu.style.display = "none";
+        abrir.style.display = "flex";
+        fechar.style.display = "none";
+      });
+
+      pesquisar.addEventListener("click", () => {
+        abrir.style.display = "none";
+        fechar.style.display = "none";
+        menu.style.display = "none";
+
+        titulo.style.display = "none";
+        filtro.style.display = "flex";
+
+        pesquisar.style.display = "none";
+        fecharPesquisar.style.display = "flex";
+      });
+
+      fecharPesquisar.addEventListener("click", () => {
+        abrir.style.display = "flex";
+
+        titulo.style.display = "block";
+        filtro.style.display = "none";
+
+        pesquisar.style.display = "flex";
+        fecharPesquisar.style.display = "none";
+      });
+    </script>
   </body>
 </html>
