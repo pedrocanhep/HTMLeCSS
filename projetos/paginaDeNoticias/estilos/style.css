@@ -199,6 +199,8 @@ article.noticia img {
 article.noticia img:hover {
     transform: scale(1.1);
     transition: 0.2s ease all;
+
+    cursor: pointer;
 }
 
 .conteudoNoticia {
